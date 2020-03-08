@@ -5,7 +5,7 @@ a.button {
 
     color: var(--black);
 
-    line-height: 63px;
+    line-height: 64px;
 
     font-size: 16px;
     font-weight: bold;
@@ -15,7 +15,21 @@ a.button {
     padding: calc((64px - 16px) / 2) 15px;
 }
 
-.button:hover {
+a.button-i {
+    padding: 0;
+}
+
+a.button-i i {
+    font-size: 32px;
+    padding: calc((64px - 32px) / 2) 15px;
+}
+
+.button:not(.button-i):hover {
+    background-color: var(--light-bg);
+    color: var(--primary);
+}
+
+.button-i:hover i {
     background-color: var(--light-bg);
     color: var(--primary);
 }
