@@ -36,6 +36,15 @@ a.button-i i {
 
 .center-flex {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+.icon-btn i {
+    font-size: 64px;
+}
+
+.icon-btn:hover i {
+    color: var(--primary);
 }

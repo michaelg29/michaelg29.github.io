@@ -5,7 +5,7 @@
     --secondary: #323232;
     --light: #AED6F1;
     --black: #323232;
-    --light-bg: rgba(174, 214, 241, .5);
+    --light-bg: rgba(174, 214, 241);
 
     --serif: 'IBM Plex Serif', serif;
     --sans: 'IBM Plex Sans', sans-serif;
@@ -17,6 +17,8 @@
     font-family: var(--serif);
 
     scroll-behavior: smooth;
+
+    color: var(--black);
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
