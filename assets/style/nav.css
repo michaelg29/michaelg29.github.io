@@ -21,7 +21,7 @@
 }
 
 #nav-toggle-label:hover {
-    background-color: var(--light-bg);
+    background-color: var(--light);
 }
 
 #nav-toggle-label span {
@@ -94,11 +94,14 @@ div.nav-brand {
 
     background-color: white;
     width: calc(100% - 63px);
+
+    height: 63px;
+    line-height: 63px;
 }
 
 a.nav-brand {
     font-size: 24px;
-    line-height: 63px;
+    vertical-align: middle;
 
     padding: calc((64px - 24px) / 2) 30px;
 }
