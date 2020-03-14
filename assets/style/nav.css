@@ -106,8 +106,15 @@ div.nav-brand {
 }
 
 a.nav-brand {
-    font-size: 24px;
+    font-size: 20px;
     vertical-align: middle;
 
-    padding: calc((59px - 24px) / 2) 30px;
+    padding: calc((59px - 20px) / 2) 30px;
+}
+
+@media (orientation: landscape) and (min-width: 570px) {
+    a.nav-brand {
+        font-size: 24px;
+        padding: calc((59px - 24px) / 2) 30px;
+    }
 }
