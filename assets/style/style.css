@@ -5,7 +5,8 @@
     --secondary: #323232;
     --light: #AED6F1;
     --black: #323232;
-    --light-bg: rgba(174, 214, 241, .25);
+	--light-bg: rgba(174, 214, 241, .25);
+	--dark-bg: rgba(50, 50, 50, .5);
 
     --serif: 'IBM Plex Serif', serif;
     --sans: 'IBM Plex Sans', sans-serif;
@@ -55,6 +56,10 @@ html, body {
 
 .content-padding {
     padding: 30px 0;
+}
+
+input[type="checkbox"] {
+	display: none;
 }
 
 /* ================================ GRID LAYOUT ================================= */

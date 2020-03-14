@@ -5,14 +5,14 @@ a.button {
 
     color: var(--black);
 
-    line-height: 64px;
+    line-height: 63px;
 
     font-size: 16px;
     font-weight: bold;
 
     text-transform: uppercase;
 
-    padding: calc((64px - 16px) / 2) 15px;
+    padding: calc((60px - 16px) / 2) 15px;
 }
 
 a.button-i {
@@ -47,6 +47,17 @@ a.button-i i {
 
 .icon-btn:hover i {
     color: var(--primary);
+}
+
+/* ========================= title ========================= */
+
+.title {
+    text-align: center;
+    padding: 30px 60px;   
+}
+
+.title span {
+    padding-bottom: 30px;
 }
 
 /* ======================================== CARD =====================================*/
@@ -89,4 +100,148 @@ a.button-i i {
 
 .card-desc {
     font-size: 24px;
+}
+
+/* ==================================== FLEX_TILE ====================================== */
+.flex-tile {
+    width: 100%;
+    height: 500px;
+
+    position: relative;
+
+    cursor: pointer;
+}
+
+@media (orientation: landscape) and (min-width: 570px) {
+    .flex-tile {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+.flex-tile .hover-desc {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+
+    display: none;
+
+    width: calc(100% - 30px);
+    margin: 0;
+    padding: 15px;
+
+    text-align: center;
+
+    background-color: var(--primary);
+    color: white;
+}
+
+.flex-tile:hover .hover-desc {
+    bottom: 0;
+
+    display: inherit;
+}
+
+.checked-wrapper {
+    position: absolute;
+    top: 63px;
+    left: 0;
+
+    width: 100%;
+    height: calc(100% - 63px);
+
+    background-color: var(--dark-bg);
+
+    display: none;
+
+    z-index: 8;
+}
+
+.checked-toggle:checked + .checked-wrapper {
+    display: inline;
+}
+
+.checked-content {
+    position: relative;
+
+    margin: 15px;
+    padding: 0;
+
+    background-color: white;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+}
+
+@media (orientation: landscape) and (min-width: 570px) {
+    .checked-content {
+        margin: 50px;
+
+        width: calc(100% - 100px);
+        height: calc(100% - 100px);
+    }
+}
+
+.checked-content-toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    height: 60px;
+    width: 60px;
+
+    cursor: pointer;
+}
+
+.checked-content-toggle:hover {
+    background-color: var(--light);
+}
+
+.checked-content-toggle span {
+    position: absolute; 
+    height: 6px;
+    width: 34px;
+
+    top: calc((60px - 6px) / 2);
+    right: calc((60px - 34px) / 2);
+
+    background-color: var(--black);
+}
+
+.checked-content-toggle span:first-child {
+    transform: rotate(45deg);
+}
+
+.checked-content-toggle span:last-child {
+    transform: rotate(-45deg);
+}
+
+p.checked-content-title {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: var(--sans-condensed);
+
+    line-height: 60px;
+
+    margin: 0;
+    padding: 0 60px;
+}
+
+.checked-content-desc {
+    overflow-y: auto;
+    height: calc(100% - 120px);
+    margin-bottom: 60px;
+
+    padding: 50px;
+
+    font-size: 20px;
+
+}
+
+.checked-content-desc a {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: var(--sans);
 }
