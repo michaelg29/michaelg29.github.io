@@ -231,7 +231,7 @@ p.checked-content-title {
 
 .checked-content-desc {
     overflow-y: auto;
-    height: calc(100% - 120px);
+    height: calc(100% - 120px - 100px);
     margin-bottom: 60px;
 
     padding: 50px;

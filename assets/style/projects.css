@@ -8,3 +8,23 @@ label.flex-tile {
 #english-cw {
     background-image: url("/assets/cgi-bin/english-cw.png");
 }
+
+#metabolic {
+    background-image: url("/assets/cgi-bin/metabolic.png");
+}
+
+#quebec {
+    background-image: url("/assets/cgi-bin/quebec.png");
+}
+
+#french-summer {
+    background-image: url("/assets/cgi-bin/french-summer.png");
+}
+
+#themes {
+    background-image: url("/assets/cgi-bin/themes.png");
+}
+
+#plain-data {
+    background-image: url("/assets/cgi-bin/plain-data.png");
+}
