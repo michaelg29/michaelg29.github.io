@@ -12,7 +12,7 @@ a.button {
 
     text-transform: uppercase;
 
-    padding: calc((60px - 16px) / 2) 15px;
+    padding: calc((59px - 16px) / 2) 15px;
 }
 
 a.button-i {
