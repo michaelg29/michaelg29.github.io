@@ -28,8 +28,13 @@
 	}
 }
 
-html, body {
-    overflow: hidden;
+html {
+	overflow: hidden;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .left {
