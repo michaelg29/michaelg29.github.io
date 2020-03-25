@@ -102,6 +102,12 @@ a.button-i i {
     font-size: 24px;
 }
 
+.card-desc a {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: var(--sans-condensed);
+}
+
 /* ==================================== FLEX_TILE ====================================== */
 .flex-tile {
     width: 100%;
