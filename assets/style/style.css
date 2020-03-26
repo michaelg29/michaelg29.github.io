@@ -66,6 +66,12 @@ p.pad {
 	padding: 15px 30px;
 }
 
+@media (orientation: landscape) {
+	.pad-left {
+		padding-left: 15px;
+	}
+}
+
 input[type="checkbox"] {
 	display: none;
 }
