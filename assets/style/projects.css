@@ -28,3 +28,7 @@ label.flex-tile {
 #plain-data {
     background-image: url("/assets/cgi-bin/plain-data.png");
 }
+
+#json {
+    background-image: url("/assets/cgi-bin/json.jpg");
+}
