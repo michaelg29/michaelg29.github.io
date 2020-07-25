@@ -98,14 +98,14 @@ a.button-i i {
     font-family: var(--sans-condensed);
 }
 
-.card-desc {
+.card-desc, .card-desc * {
     font-size: 24px;
+    font-family: var(--sans-condensed);
 }
 
 .card-desc a {
     text-decoration: none;
     font-weight: bold;
-    font-family: var(--sans-condensed);
 }
 
 /* ==================================== FLEX_TILE ====================================== */
