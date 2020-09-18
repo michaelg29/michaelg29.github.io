@@ -5,8 +5,16 @@ label.flex-tile {
     border: 1px solid white;
 }
 
+#glengine {
+    background-image: url("/assets/cgi-bin/glengine.png");
+}
+
 #english-cw {
     background-image: url("/assets/cgi-bin/english-cw.png");
+}
+
+#json {
+    background-image: url("/assets/cgi-bin/json.jpg");
 }
 
 #metabolic {
@@ -15,6 +23,10 @@ label.flex-tile {
 
 #quebec {
     background-image: url("/assets/cgi-bin/quebec.png");
+}
+
+#spacex {
+    background-image: url("/assets/cgi-bin/spacex.png");
 }
 
 #french-summer {
@@ -27,12 +39,4 @@ label.flex-tile {
 
 #plain-data {
     background-image: url("/assets/cgi-bin/plain-data.png");
-}
-
-#json {
-    background-image: url("/assets/cgi-bin/json.jpg");
-}
-
-#spacex {
-    background-image: url("/assets/cgi-bin/spacex.png");
 }

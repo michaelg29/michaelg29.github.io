@@ -80,6 +80,37 @@
         <div class="content-padding" id="top-content">
             <div class="center-flex">
                 <div class="flex-item">
+                    <input type="checkbox" id="glengine-toggle" class="checked-toggle">
+                    <div class="checked-wrapper">
+                        <div class="checked-content">
+                            <label for="glengine-toggle" class="checked-content-toggle">
+                                <span></span>
+                                <span></span>
+                            </label>
+                            <p class="checked-content-title">
+                                OpenGL Engine
+                            </p>
+                            <div class="checked-content-desc">
+                                <p>Implementation: C++</p>
+                                <p>
+                                    Links:
+                                    <a href="https://github.com/michaelg29/yt-tutorials/tree/master/CPP/OpenGL/OpenGLTutorial" target="_blank"
+                                        title="GitHub">Source Code</a>,
+                                    <a href="https://www.youtube.com/playlist?list=PLysLvOneEETPlOI_PI4mJnocqIpr2cSHS" target="_blank" title="YouTube">Creation
+                                        Tutorial</a>
+                                </p>
+                                <p>
+                                    In the beginning of 2020, I began to learn OpenGL, a low level graphics library in C++. In learning it, I decided to start an engine so that I would be able to use the code later on. In the first half of the project, I followed the site learnopengl.com, one of the most extensive OpenGL tutorials out there, created by Joey de Vries. I implemented a good portion of that tutorial in my engine while implementing many of my own contributions. As of now, it encompasses basic lighting (no shadows yet), model loading, object physics, and a primitive collision algorithm that makes use of an octree. In the process, I went through several revisions of the code to add optimizations and organize the code into classes so that it would be easier to read. Currently, I am working on revising the collision algorithm to use planes from a collision model rather than bounding boxes or spheres.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <label class="flex-tile" id="glengine" for="glengine-toggle">
+                    <p class="hover-desc">OpenGL Engine</p>
+                </label>
+
+                <div class="flex-item">
                     <input type="checkbox" id="english-cw-toggle" class="checked-toggle">
                     <div class="checked-wrapper">
                         <div class="checked-content">
@@ -108,6 +139,44 @@
                 </div>
                 <label class="flex-tile" id="english-cw" for="english-cw-toggle">
                     <p class="hover-desc">English Civil War Website</p>
+                </label>
+
+                <div class="flex-item">
+                    <input type="checkbox" id="json-toggle" class="checked-toggle">
+                    <div class="checked-wrapper">
+                        <div class="checked-content">
+                            <label for="json-toggle" class="checked-content-toggle">
+                                <span></span>
+                                <span></span>
+                            </label>
+                            <p class="checked-content-title">
+                                JSON Read/Write Library (C++)
+                            </p>
+                            <div class="checked-content-desc">
+                                <p>Implementation: C++</p>
+                                <p>
+                                    Links:
+                                    <a href="https://github.com/michaelg29/json-cpp/" target="_blank"
+                                        title="GitHub">Source Code</a>
+                                </p>
+                                <p>
+                                    Installation and usage instructions on the <a
+                                        href="https://github.com/michaelg29/json-cpp/" target="_blank"
+                                        title="GitHub">GitHub Repository</a>.
+                                </p>
+                                <p>
+                                    This is a lightweight json reader, editor, and writer in a single hpp file. In this
+                                    project, I was able to enhance my skills with C++, including how to use references
+                                    along with how to integrate more powerful string parsing into a program. The goal of
+                                    this library is to provide a small but important tool that can be used to write and
+                                    parse data in other applications such as games that are written in C++.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <label class="flex-tile" id="json" for="json-toggle">
+                    <p class="hover-desc">JSON Read/Write Library (C++)</p>
                 </label>
 
                 <div class="flex-item">
@@ -180,6 +249,51 @@
                 </label>
 
                 <div class="flex-item">
+                    <input type="checkbox" id="plain-data-toggle" class="checked-toggle">
+                    <div class="checked-wrapper">
+                        <div class="checked-content">
+                            <label for="plain-data-toggle" class="checked-content-toggle">
+                                <span></span>
+                                <span></span>
+                            </label>
+                            <p class="checked-content-title">
+                                Plain Data Application
+                            </p>
+                            <div class="checked-content-desc">
+                                <p>Implementation: Server - Python, Client - JavaScript (Node.js)</p>
+                                <p>
+                                    Links:
+                                    <a href="https://github.com/michaelg29/plain-data/" target="_blank"
+                                        title="GitHub">Source Code</a>,
+                                    <a href="https://youtu.be/KoiGcdnSqjs" target="_blank" title="YouTube">Demo
+                                        Video</a>
+                                </p>
+                                <p>
+                                    This application is a server-client model where anybody can upload a problem they
+                                    have, a project in progress, a set of data, anything they need feedback on. And
+                                    anybody can reply to it, creating a very wide range of incoming opinions. It
+                                    encourages public contribution on a large scale because everybody has the
+                                    opportunity to express their thoughts regarding the topics on the application.
+                                </p>
+                                <p>
+                                    The server was built in Python and the first desktop client was built using
+                                    Javascript (Electron.js). They communicate using a secured form of TCP
+                                    communication, with a combination of RSA and AES encryption to ensure the
+                                    communications are private and not vulnerable to attacks.
+                                </p>
+                                <p>
+                                    I completed this project for the 2019 Camp Khan and it placed in the top 50 projects
+                                    for the summer.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <label class="flex-tile" id="plain-data" for="plain-data-toggle">
+                    <p class="hover-desc">Plain Data</p>
+                </label>
+
+                <div class="flex-item">
                     <input type="checkbox" id="french-summer-toggle" class="checked-toggle">
                     <div class="checked-wrapper">
                         <div class="checked-content">
@@ -245,89 +359,6 @@
                 </div>
                 <label class="flex-tile" id="themes" for="themes-toggle">
                     <p class="hover-desc">Portfolio de Thèmes Website</p>
-                </label>
-
-                <div class="flex-item">
-                    <input type="checkbox" id="plain-data-toggle" class="checked-toggle">
-                    <div class="checked-wrapper">
-                        <div class="checked-content">
-                            <label for="plain-data-toggle" class="checked-content-toggle">
-                                <span></span>
-                                <span></span>
-                            </label>
-                            <p class="checked-content-title">
-                                Plain Data Application
-                            </p>
-                            <div class="checked-content-desc">
-                                <p>Implementation: Server - Python, Client - JavaScript (Node.js)</p>
-                                <p>
-                                    Links:
-                                    <a href="https://github.com/michaelg29/plain-data/" target="_blank"
-                                        title="GitHub">Source Code</a>,
-                                    <a href="https://youtu.be/KoiGcdnSqjs" target="_blank" title="YouTube">Demo
-                                        Video</a>
-                                </p>
-                                <p>
-                                    This application is a server-client model where anybody can upload a problem they
-                                    have, a project in progress, a set of data, anything they need feedback on. And
-                                    anybody can reply to it, creating a very wide range of incoming opinions. It
-                                    encourages public contribution on a large scale because everybody has the
-                                    opportunity to express their thoughts regarding the topics on the application.
-                                </p>
-                                <p>
-                                    The server was built in Python and the first desktop client was built using
-                                    Javascript (Electron.js). They communicate using a secured form of TCP
-                                    communication, with a combination of RSA and AES encryption to ensure the
-                                    communications are private and not vulnerable to attacks.
-                                </p>
-                                <p>
-                                    I completed this project for the 2019 Camp Khan and it placed in the top 50 projects
-                                    for the summer.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <label class="flex-tile" id="plain-data" for="plain-data-toggle">
-                    <p class="hover-desc">Plain Data</p>
-                </label>
-
-                <div class="flex-item">
-                    <input type="checkbox" id="json-toggle" class="checked-toggle">
-                    <div class="checked-wrapper">
-                        <div class="checked-content">
-                            <label for="json-toggle" class="checked-content-toggle">
-                                <span></span>
-                                <span></span>
-                            </label>
-                            <p class="checked-content-title">
-                                JSON Read/Write Library (C++)
-                            </p>
-                            <div class="checked-content-desc">
-                                <p>Implementation: C++</p>
-                                <p>
-                                    Links:
-                                    <a href="https://github.com/michaelg29/json-cpp/" target="_blank"
-                                        title="GitHub">Source Code</a>
-                                </p>
-                                <p>
-                                    Installation and usage instructions on the <a
-                                        href="https://github.com/michaelg29/json-cpp/" target="_blank"
-                                        title="GitHub">GitHub Repository</a>.
-                                </p>
-                                <p>
-                                    This is a lightweight json reader, editor, and writer in a single hpp file. In this
-                                    project, I was able to enhance my skills with C++, including how to use references
-                                    along with how to integrate more powerful string parsing into a program. The goal of
-                                    this library is to provide a small but important tool that can be used to write and
-                                    parse data in other applications such as games that are written in C++.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <label class="flex-tile" id="json" for="json-toggle">
-                    <p class="hover-desc">JSON Read/Write Library (C++)</p>
                 </label>
 
                 <div class="flex-item">
