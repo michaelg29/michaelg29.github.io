@@ -9,6 +9,10 @@ label.flex-tile {
     background-image: url("/assets/cgi-bin/glengine.png");
 }
 
+#cmath {
+    background-image: url("/assets/cgi-bin/cmath.jpg");
+}
+
 #english-cw {
     background-image: url("/assets/cgi-bin/english-cw.png");
 }
