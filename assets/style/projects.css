@@ -1,0 +1,46 @@
+label.flex-tile {
+    background-position: center;
+    background-size: cover;
+
+    border: 1px solid white;
+}
+
+#glengine {
+    background-image: url("/assets/cgi-bin/glengine.png");
+}
+
+#cmath {
+    background-image: url("/assets/cgi-bin/cmath.jpg");
+}
+
+#english-cw {
+    background-image: url("/assets/cgi-bin/english-cw.png");
+}
+
+#json {
+    background-image: url("/assets/cgi-bin/json.jpg");
+}
+
+#metabolic {
+    background-image: url("/assets/cgi-bin/metabolic.png");
+}
+
+#quebec {
+    background-image: url("/assets/cgi-bin/quebec.png");
+}
+
+#spacex {
+    background-image: url("/assets/cgi-bin/spacex.png");
+}
+
+#french-summer {
+    background-image: url("/assets/cgi-bin/french-summer.png");
+}
+
+#themes {
+    background-image: url("/assets/cgi-bin/themes.png");
+}
+
+#plain-data {
+    background-image: url("/assets/cgi-bin/plain-data.png");
+}
