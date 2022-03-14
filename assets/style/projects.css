@@ -57,3 +57,7 @@ section.project-section {
 #plain-data {
     background-image: url("/assets/cgi-bin/plain-data.png");
 }
+
+#dv {
+    background-image: url("/assets/cgi-bin/dv.png");
+}
