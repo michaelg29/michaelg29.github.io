@@ -5,6 +5,19 @@ label.flex-tile {
     border: 1px solid white;
 }
 
+section.project-section {
+    padding: 0px 50px;
+}
+
+.project-section .center-flex {
+    padding: 50px;
+}
+
+.project-section .section-title {
+    font-size: 48px;
+    font-weight: bold;
+}
+
 #glengine {
     background-image: url("/assets/cgi-bin/glengine.png");
 }

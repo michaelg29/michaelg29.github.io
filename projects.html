@@ -84,388 +84,401 @@
         </div>
 
         <div class="content-padding" id="top-content">
-            <div class="center-flex">
-                <div class="flex-item">
-                    <input type="checkbox" id="glengine-toggle" class="checked-toggle">
-                    <div class="checked-wrapper">
-                        <div class="checked-content">
-                            <label for="glengine-toggle" class="checked-content-toggle">
-                                <span></span>
-                                <span></span>
-                            </label>
-                            <p class="checked-content-title">
-                                OpenGL Engine
-                            </p>
-                            <div class="checked-content-desc">
-                                <p>Implementation: C++</p>
-                                <p>
-                                    Links:
-                                    <a href="https://github.com/michaelg29/yt-tutorials/tree/master/CPP/OpenGL/OpenGLTutorial" target="_blank"
-                                        title="GitHub">Source Code</a>,
-                                    <a href="https://www.youtube.com/playlist?list=PLysLvOneEETPlOI_PI4mJnocqIpr2cSHS" target="_blank" title="YouTube">Creation
-                                        Tutorial</a>
+            <section class="project-section">
+                <h1 class="section-title">Data Applications</h1>
+                <div class="center-flex">
+                    <div class="flex-item">
+                        <input type="checkbox" id="cmath-toggle" class="checked-toggle">
+                        <div class="checked-wrapper">
+                            <div class="checked-content">
+                                <label for="cmath-toggle" class="checked-content-toggle">
+                                    <span></span>
+                                    <span></span>
+                                </label>
+                                <p class="checked-content-title">
+                                    CMathematics
                                 </p>
-                                <p>
-                                    In the beginning of 2020, I began to learn OpenGL, a low level graphics library in C++. In learning it, I decided to implement my own 3D engine in order to experience the inner workings of the library along with creating something that would be useful later on. In the first half of the project, I followed the site, <a href="https://learnopengl.com/">learnopengl.com</a>, one of the most thorough OpenGL tutorials on the internet, created by Joey de Vries. I implemented a good portion of that tutorial in my engine while adding many of my own contributions such as organizing the code into many different classes to take full advantage of C++’s object oriented design. As of now, it encompasses environment interactions, model loading, object physics, user input, and a primitive collision algorithm that makes use of an octree. In the process, I went through several revisions of the code to add optimizations and organize the code into classes so that it would be easier to read. Currently, I am working on revising the collision algorithm to use planes from a collision model rather than bounding boxes or spheres.
-                                </p>
+                                <div class="checked-content-desc">
+                                    <p>Implementation: C</p>
+                                    <p>
+                                        Links:
+                                        <a href="https://github.com/michaelg29/cmathematics" target="_blank"
+                                            title="GitHub">Source Code</a>,
+                                        <a href="https://www.youtube.com/playlist?list=PLysLvOneEETMjrK5N-PLIYhZKwmxjGs2-" target="_blank" title="YouTube">Creation
+                                            Tutorial</a>
+                                    </p>
+                                    <p>
+                                        This library implements various mathematical functions in C, including those in linear algebra, calculus, along with more algorithmic areas such as graph theory and big integer representation. In this project, I wanted to delve into translating mathematical ideas into computer code. To contribute to the interest and challenge, I programmed it using a lower-level language, which allowed me to learn more about computer architecture and memory representation. As of now, it primarily consists of basic functions in linear algebra, graph theory, and integer representation. However, in the future, I want to add on to these core concepts and create functionality in many other applications, such as encryption.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <label class="flex-tile" id="glengine" for="glengine-toggle">
-                    <p class="hover-desc">OpenGL Engine</p>
-                </label>
+                    <label class="flex-tile" id="cmath" for="cmath-toggle">
+                        <p class="hover-desc">CMathematics</p>
+                    </label>
 
-                <div class="flex-item">
-                    <input type="checkbox" id="cmath-toggle" class="checked-toggle">
-                    <div class="checked-wrapper">
-                        <div class="checked-content">
-                            <label for="cmath-toggle" class="checked-content-toggle">
-                                <span></span>
-                                <span></span>
-                            </label>
-                            <p class="checked-content-title">
-                                CMathematics
-                            </p>
-                            <div class="checked-content-desc">
-                                <p>Implementation: C</p>
-                                <p>
-                                    Links:
-                                    <a href="https://github.com/michaelg29/cmathematics" target="_blank"
-                                        title="GitHub">Source Code</a>,
-                                    <a href="https://www.youtube.com/playlist?list=PLysLvOneEETMjrK5N-PLIYhZKwmxjGs2-" target="_blank" title="YouTube">Creation
-                                        Tutorial</a>
+                    <div class="flex-item">
+                        <input type="checkbox" id="dv-toggle" class="checked-toggle">
+                        <div class="checked-wrapper">
+                            <div class="checked-content">
+                                <label for="dv-toggle" class="checked-content-toggle">
+                                    <span></span>
+                                    <span></span>
+                                </label>
+                                <p class="checked-content-title">
+                                    DataVault
                                 </p>
-                                <p>
-                                    This library implements various mathematical functions in C, including those in linear algebra, calculus, along with more algorithmic areas such as graph theory and big integer representation. In this project, I wanted to delve into translating mathematical ideas into computer code. To contribute to the interest and challenge, I programmed it using a lower-level language, which allowed me to learn more about computer architecture and memory representation. As of now, it primarily consists of basic functions in linear algebra, graph theory, and integer representation. However, in the future, I want to add on to these core concepts and create functionality in many other applications, such as encryption.
-                                </p>
+                                <div class="checked-content-desc">
+                                    <p>Implementation: C</p>
+                                    <p>
+                                        Links:
+                                        <a href="https://github.com/michaelg29/data-vault" target="_blank"
+                                            title="GitHub">Source Code</a>,
+                                        <a href="https://www.youtube.com/playlist?list=PLysLvOneEETNeg2YqISscjqA4udYRuGDb" target="_blank" title="YouTube">Creation
+                                            Tutorial</a>
+                                    </p>
+                                    <p>
+                                        This application is a lightweight secure data storage application that implements several forms of encryption and data security. It is the culmination of several other projects that I had been working on, such as the CMathematics library. It makes full use of its data security functions, namely encryption and decryption with AES, hashing with SHA, and key generation with PBKDF. The CMathematics library was my main motivation for this project as I wished to combine all those cryptography algorithms. So far, it has allowed me to see how these algorithms can work together to store data so that it cannot be stolen and decrypted. The application itself is relatively simple, storing data values corresponding to different categories for an entry. The project is currently ongoing, and has working account creation, data creation, and data access functions. In the future, I hope to implement a console interface along with functions to modify or delete data.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <label class="flex-tile" id="cmath" for="cmath-toggle">
-                    <p class="hover-desc">CMathematics</p>
-                </label>
+                    <label class="flex-tile" id="dv" for="dv-toggle">
+                        <p class="hover-desc">
+                            DataVault
+                        </p>
+                    </label>
 
-                <div class="flex-item">
-                    <input type="checkbox" id="dv-toggle" class="checked-toggle">
-                    <div class="checked-wrapper">
-                        <div class="checked-content">
-                            <label for="dv-toggle" class="checked-content-toggle">
-                                <span></span>
-                                <span></span>
-                            </label>
-                            <p class="checked-content-title">
-                                DataVault
-                            </p>
-                            <div class="checked-content-desc">
-                                <p>Implementation: C</p>
-                                <p>
-                                    Links:
-                                    <a href="https://github.com/michaelg29/data-vault" target="_blank"
-                                        title="GitHub">Source Code</a>,
-                                    <a href="https://www.youtube.com/playlist?list=PLysLvOneEETNeg2YqISscjqA4udYRuGDb" target="_blank" title="YouTube">Creation
-                                        Tutorial</a>
+                    <div class="flex-item">
+                        <input type="checkbox" id="plain-data-toggle" class="checked-toggle">
+                        <div class="checked-wrapper">
+                            <div class="checked-content">
+                                <label for="plain-data-toggle" class="checked-content-toggle">
+                                    <span></span>
+                                    <span></span>
+                                </label>
+                                <p class="checked-content-title">
+                                    Plain Data Application
                                 </p>
-                                <p>
-                                    This application is a lightweight secure data storage application that implements several forms of encryption and data security. It is the culmination of several other projects that I had been working on, such as the CMathematics library. It makes full use of its data security functions, namely encryption and decryption with AES, hashing with SHA, and key generation with PBKDF. The CMathematics library was my main motivation for this project as I wished to combine all those cryptography algorithms. So far, it has allowed me to see how these algorithms can work together to store data so that it cannot be stolen and decrypted. The application itself is relatively simple, storing data values corresponding to different categories for an entry. The project is currently ongoing, and has working account creation, data creation, and data access functions. In the future, I hope to implement a console interface along with functions to modify or delete data.
-                                </p>
+                                <div class="checked-content-desc">
+                                    <p>Implementation: Server - Python, Client - JavaScript (Node.js)</p>
+                                    <p>
+                                        Links:
+                                        <a href="https://github.com/michaelg29/plain-data/" target="_blank"
+                                            title="GitHub">Source Code</a>,
+                                        <a href="https://youtu.be/KoiGcdnSqjs" target="_blank" title="YouTube">Demo
+                                            Video</a>
+                                    </p>
+                                    <p>
+                                        This application is a server-client model where anybody can upload a problem they
+                                        have, a project in progress, a set of data, anything they need feedback on. And
+                                        anybody can reply to it, creating a very wide range of incoming opinions. It
+                                        encourages public contribution on a large scale because everybody has the
+                                        opportunity to express their thoughts regarding the topics on the application.
+                                    </p>
+                                    <p>
+                                        The server was built in Python and the first desktop client was built using
+                                        Javascript (Electron.js). They communicate using a secured form of TCP
+                                        communication, with a combination of RSA and AES encryption to ensure the
+                                        communications are private and not vulnerable to attacks.
+                                    </p>
+                                    <p>
+                                        I completed this project for the 2019 Camp Khan and it placed in the top 50 projects
+                                        for the summer.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <label class="flex-tile" id="dv" for="dv-toggle">
-                    <p class="hover-desc">
-                        DataVault
-                    </p>
-                </label>
+                    <label class="flex-tile" id="plain-data" for="plain-data-toggle">
+                        <p class="hover-desc">Plain Data</p>
+                    </label>
 
-                <div class="flex-item">
-                    <input type="checkbox" id="english-cw-toggle" class="checked-toggle">
-                    <div class="checked-wrapper">
-                        <div class="checked-content">
-                            <label for="english-cw-toggle" class="checked-content-toggle">
-                                <span></span>
-                                <span></span>
-                            </label>
-                            <p class="checked-content-title">
-                                English Civil War Website
-                            </p>
-                            <div class="checked-content-desc">
-                                <p>Implementation: Weebly</p>
-                                <p>
-                                    Links:
-                                    <a href="https://35679225.nhd.weebly.com/" target="_blank" title="Weebly">Site</a>
+                    <div class="flex-item">
+                        <input type="checkbox" id="json-toggle" class="checked-toggle">
+                        <div class="checked-wrapper">
+                            <div class="checked-content">
+                                <label for="json-toggle" class="checked-content-toggle">
+                                    <span></span>
+                                    <span></span>
+                                </label>
+                                <p class="checked-content-title">
+                                    JSON Read/Write Library (C++)
                                 </p>
-                                <p>
-                                    This site was created for a history project and displays information about the
-                                    English Civil War. It uses a chronological organization, with each page dedicated to
-                                    one of the three time periods of the war. This site was created with Weebly as the
-                                    competition rules dictated.
-                                </p>
+                                <div class="checked-content-desc">
+                                    <p>Implementation: C++</p>
+                                    <p>
+                                        Links:
+                                        <a href="https://github.com/michaelg29/json-cpp/" target="_blank"
+                                            title="GitHub">Source Code</a>
+                                    </p>
+                                    <p>
+                                        Installation and usage instructions on the <a
+                                            href="https://github.com/michaelg29/json-cpp/" target="_blank"
+                                            title="GitHub">GitHub Repository</a>.
+                                    </p>
+                                    <p>
+                                        This is a lightweight json reader, editor, and writer in a single hpp file. In this
+                                        project, I was able to enhance my skills with C++, including how to use references
+                                        along with how to integrate more powerful string parsing into a program. The goal of
+                                        this library is to provide a small but important tool that can be used to write and
+                                        parse data in other applications such as games that are written in C++.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <label class="flex-tile" id="json" for="json-toggle">
+                        <p class="hover-desc">JSON Read/Write Library (C++)</p>
+                    </label>
                 </div>
-                <label class="flex-tile" id="english-cw" for="english-cw-toggle">
-                    <p class="hover-desc">English Civil War Website</p>
-                </label>
+            </section>
 
-                <div class="flex-item">
-                    <input type="checkbox" id="json-toggle" class="checked-toggle">
-                    <div class="checked-wrapper">
-                        <div class="checked-content">
-                            <label for="json-toggle" class="checked-content-toggle">
-                                <span></span>
-                                <span></span>
-                            </label>
-                            <p class="checked-content-title">
-                                JSON Read/Write Library (C++)
-                            </p>
-                            <div class="checked-content-desc">
-                                <p>Implementation: C++</p>
-                                <p>
-                                    Links:
-                                    <a href="https://github.com/michaelg29/json-cpp/" target="_blank"
-                                        title="GitHub">Source Code</a>
+            <section class="project-section">
+                <h1 class="section-title">Graphical Applications</h1>
+                <div class="center-flex">
+                    <div class="flex-item">
+                        <input type="checkbox" id="glengine-toggle" class="checked-toggle">
+                        <div class="checked-wrapper">
+                            <div class="checked-content">
+                                <label for="glengine-toggle" class="checked-content-toggle">
+                                    <span></span>
+                                    <span></span>
+                                </label>
+                                <p class="checked-content-title">
+                                    OpenGL Engine
                                 </p>
-                                <p>
-                                    Installation and usage instructions on the <a
-                                        href="https://github.com/michaelg29/json-cpp/" target="_blank"
-                                        title="GitHub">GitHub Repository</a>.
-                                </p>
-                                <p>
-                                    This is a lightweight json reader, editor, and writer in a single hpp file. In this
-                                    project, I was able to enhance my skills with C++, including how to use references
-                                    along with how to integrate more powerful string parsing into a program. The goal of
-                                    this library is to provide a small but important tool that can be used to write and
-                                    parse data in other applications such as games that are written in C++.
-                                </p>
+                                <div class="checked-content-desc">
+                                    <p>Implementation: C++</p>
+                                    <p>
+                                        Links:
+                                        <a href="https://github.com/michaelg29/yt-tutorials/tree/master/CPP/OpenGL/OpenGLTutorial" target="_blank"
+                                            title="GitHub">Source Code</a>,
+                                        <a href="https://www.youtube.com/playlist?list=PLysLvOneEETPlOI_PI4mJnocqIpr2cSHS" target="_blank" title="YouTube">Creation
+                                            Tutorial</a>
+                                    </p>
+                                    <p>
+                                        In the beginning of 2020, I began to learn OpenGL, a low level graphics library in C++. In learning it, I decided to implement my own 3D engine in order to experience the inner workings of the library along with creating something that would be useful later on. In the first half of the project, I followed the site, <a href="https://learnopengl.com/">learnopengl.com</a>, one of the most thorough OpenGL tutorials on the internet, created by Joey de Vries. I implemented a good portion of that tutorial in my engine while adding many of my own contributions such as organizing the code into many different classes to take full advantage of C++’s object oriented design. As of now, it encompasses environment interactions, model loading, object physics, user input, and a primitive collision algorithm that makes use of an octree. In the process, I went through several revisions of the code to add optimizations and organize the code into classes so that it would be easier to read. Currently, I am working on revising the collision algorithm to use planes from a collision model rather than bounding boxes or spheres.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <label class="flex-tile" id="glengine" for="glengine-toggle">
+                        <p class="hover-desc">OpenGL Engine</p>
+                    </label>
                 </div>
-                <label class="flex-tile" id="json" for="json-toggle">
-                    <p class="hover-desc">JSON Read/Write Library (C++)</p>
-                </label>
+            </section>
 
-                <div class="flex-item">
-                    <input type="checkbox" id="metabolic-toggle" class="checked-toggle">
-                    <div class="checked-wrapper">
-                        <div class="checked-content">
-                            <label for="metabolic-toggle" class="checked-content-toggle">
-                                <span></span>
-                                <span></span>
-                            </label>
-                            <p class="checked-content-title">
-                                Metabolic Pathway Website
-                            </p>
-                            <div class="checked-content-desc">
-                                <p>Implementation: HTML, JavaScript, CSS, Hosted on GitHub Pages</p>
-                                <p>
-                                    Links:
-                                    <a href="https://michaelg29.github.io/C4MetabolicPathway/" target="_blank"
-                                        title="GitHub Pages">Site</a>,
-                                    <a href="https://github.com/michaelg29/C4MetabolicPathway/" target="_blank"
-                                        title="GitHub">Source Code</a>
+            <section class="project-section">
+                <h1 class="section-title">Websites/Mobile Apps</h1>
+                <div class="center-flex">
+                    <div class="flex-item">
+                        <input type="checkbox" id="english-cw-toggle" class="checked-toggle">
+                        <div class="checked-wrapper">
+                            <div class="checked-content">
+                                <label for="english-cw-toggle" class="checked-content-toggle">
+                                    <span></span>
+                                    <span></span>
+                                </label>
+                                <p class="checked-content-title">
+                                    English Civil War Website
                                 </p>
-                                <p>
-                                    This site was created to display a biological process. I was able to first try out
-                                    hosting a site with GitHub pages with this project and experimented with different
-                                    ways to present the information. I ended up with a JavaScript click-through
-                                    slideshow to show the different steps in the process.
-                                </p>
+                                <div class="checked-content-desc">
+                                    <p>Implementation: Weebly</p>
+                                    <p>
+                                        Links:
+                                        <a href="https://35679225.nhd.weebly.com/" target="_blank" title="Weebly">Site</a>
+                                    </p>
+                                    <p>
+                                        This site was created for a history project and displays information about the
+                                        English Civil War. It uses a chronological organization, with each page dedicated to
+                                        one of the three time periods of the war. This site was created with Weebly as the
+                                        competition rules dictated.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <label class="flex-tile" id="metabolic" for="metabolic-toggle">
-                    <p class="hover-desc">Metabolic Pathway Website</p>
-                </label>
-
-                <div class="flex-item">
-                    <input type="checkbox" id="quebec-toggle" class="checked-toggle">
-                    <div class="checked-wrapper">
-                        <div class="checked-content">
-                            <label for="quebec-toggle" class="checked-content-toggle">
-                                <span></span>
-                                <span></span>
-                            </label>
-                            <p class="checked-content-title">
-                                Quebec Architecture
-                            </p>
-                            <div class="checked-content-desc">
-                                <p>Implementation: HTML, JavaScript, CSS (Bootstrap), Hosted on GitHub Pages</p>
-                                <p>
-                                    Links:
-                                    <a href="https://michaelg29.github.io/architectureDeQuebec" target="_blank"
-                                        title="GitHub Pages">Site</a>,
-                                    <a href="https://github.com/michaelg29/architectureDeQuebec/" target="_blank"
-                                        title="GitHub">Source Code</a>
+                    <label class="flex-tile" id="english-cw" for="english-cw-toggle">
+                        <p class="hover-desc">English Civil War Website</p>
+                    </label>
+    
+                    <div class="flex-item">
+                        <input type="checkbox" id="metabolic-toggle" class="checked-toggle">
+                        <div class="checked-wrapper">
+                            <div class="checked-content">
+                                <label for="metabolic-toggle" class="checked-content-toggle">
+                                    <span></span>
+                                    <span></span>
+                                </label>
+                                <p class="checked-content-title">
+                                    Metabolic Pathway Website
                                 </p>
-                                <p>
-                                    I created this site in French class to present research I did on architecture in
-                                    Quebec City. I opted to host with GitHub pages once again because of the ease in the
-                                    process. This was the first time I experimented with Bootstrap, a CSS framework.
-                                    Additionally, I incorporated many functions in CSS, such as a timeline, along with
-                                    creating my own HTML element in JavaScript.
-                                </p>
+                                <div class="checked-content-desc">
+                                    <p>Implementation: HTML, JavaScript, CSS, Hosted on GitHub Pages</p>
+                                    <p>
+                                        Links:
+                                        <a href="https://michaelg29.github.io/C4MetabolicPathway/" target="_blank"
+                                            title="GitHub Pages">Site</a>,
+                                        <a href="https://github.com/michaelg29/C4MetabolicPathway/" target="_blank"
+                                            title="GitHub">Source Code</a>
+                                    </p>
+                                    <p>
+                                        This site was created to display a biological process. I was able to first try out
+                                        hosting a site with GitHub pages with this project and experimented with different
+                                        ways to present the information. I ended up with a JavaScript click-through
+                                        slideshow to show the different steps in the process.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <label class="flex-tile" id="quebec" for="quebec-toggle">
-                    <p class="hover-desc">Quebec Architecture Website</p>
-                </label>
-
-                <div class="flex-item">
-                    <input type="checkbox" id="plain-data-toggle" class="checked-toggle">
-                    <div class="checked-wrapper">
-                        <div class="checked-content">
-                            <label for="plain-data-toggle" class="checked-content-toggle">
-                                <span></span>
-                                <span></span>
-                            </label>
-                            <p class="checked-content-title">
-                                Plain Data Application
-                            </p>
-                            <div class="checked-content-desc">
-                                <p>Implementation: Server - Python, Client - JavaScript (Node.js)</p>
-                                <p>
-                                    Links:
-                                    <a href="https://github.com/michaelg29/plain-data/" target="_blank"
-                                        title="GitHub">Source Code</a>,
-                                    <a href="https://youtu.be/KoiGcdnSqjs" target="_blank" title="YouTube">Demo
-                                        Video</a>
+                    <label class="flex-tile" id="metabolic" for="metabolic-toggle">
+                        <p class="hover-desc">Metabolic Pathway Website</p>
+                    </label>
+    
+                    <div class="flex-item">
+                        <input type="checkbox" id="quebec-toggle" class="checked-toggle">
+                        <div class="checked-wrapper">
+                            <div class="checked-content">
+                                <label for="quebec-toggle" class="checked-content-toggle">
+                                    <span></span>
+                                    <span></span>
+                                </label>
+                                <p class="checked-content-title">
+                                    Quebec Architecture
                                 </p>
-                                <p>
-                                    This application is a server-client model where anybody can upload a problem they
-                                    have, a project in progress, a set of data, anything they need feedback on. And
-                                    anybody can reply to it, creating a very wide range of incoming opinions. It
-                                    encourages public contribution on a large scale because everybody has the
-                                    opportunity to express their thoughts regarding the topics on the application.
-                                </p>
-                                <p>
-                                    The server was built in Python and the first desktop client was built using
-                                    Javascript (Electron.js). They communicate using a secured form of TCP
-                                    communication, with a combination of RSA and AES encryption to ensure the
-                                    communications are private and not vulnerable to attacks.
-                                </p>
-                                <p>
-                                    I completed this project for the 2019 Camp Khan and it placed in the top 50 projects
-                                    for the summer.
-                                </p>
+                                <div class="checked-content-desc">
+                                    <p>Implementation: HTML, JavaScript, CSS (Bootstrap), Hosted on GitHub Pages</p>
+                                    <p>
+                                        Links:
+                                        <a href="https://michaelg29.github.io/architectureDeQuebec" target="_blank"
+                                            title="GitHub Pages">Site</a>,
+                                        <a href="https://github.com/michaelg29/architectureDeQuebec/" target="_blank"
+                                            title="GitHub">Source Code</a>
+                                    </p>
+                                    <p>
+                                        I created this site in French class to present research I did on architecture in
+                                        Quebec City. I opted to host with GitHub pages once again because of the ease in the
+                                        process. This was the first time I experimented with Bootstrap, a CSS framework.
+                                        Additionally, I incorporated many functions in CSS, such as a timeline, along with
+                                        creating my own HTML element in JavaScript.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <label class="flex-tile" id="plain-data" for="plain-data-toggle">
-                    <p class="hover-desc">Plain Data</p>
-                </label>
-
-                <div class="flex-item">
-                    <input type="checkbox" id="french-summer-toggle" class="checked-toggle">
-                    <div class="checked-wrapper">
-                        <div class="checked-content">
-                            <label for="french-summer-toggle" class="checked-content-toggle">
-                                <span></span>
-                                <span></span>
-                            </label>
-                            <p class="checked-content-title">
-                                French Summer Work Website
-                            </p>
-                            <div class="checked-content-desc">
-                                <p>Implementation: HTML, CSS, Hosted on GitHub Pages</p>
-                                <p>
-                                    Links:
-                                    <a href="https://michaelg29.github.io/travailEte" target="_blank"
-                                        title="GitHub Pages">Site</a>,
-                                    <a href="https://github.com/michaelg29/travailEte/" target="_blank"
-                                        title="GitHub">Source Code</a>
+                    <label class="flex-tile" id="quebec" for="quebec-toggle">
+                        <p class="hover-desc">Quebec Architecture Website</p>
+                    </label>
+    
+                    <div class="flex-item">
+                        <input type="checkbox" id="french-summer-toggle" class="checked-toggle">
+                        <div class="checked-wrapper">
+                            <div class="checked-content">
+                                <label for="french-summer-toggle" class="checked-content-toggle">
+                                    <span></span>
+                                    <span></span>
+                                </label>
+                                <p class="checked-content-title">
+                                    French Summer Work Website
                                 </p>
-                                <p>
-                                    This website was created for French class as a journal for the tasks we were given
-                                    to complete over the summer. There is a lot of media involved with this site, so I
-                                    was able to learn the best manners in which I could display the audio and video
-                                    clips. This site was built completely in HTML and CSS, without any JavaScript.
-                                </p>
+                                <div class="checked-content-desc">
+                                    <p>Implementation: HTML, CSS, Hosted on GitHub Pages</p>
+                                    <p>
+                                        Links:
+                                        <a href="https://michaelg29.github.io/travailEte" target="_blank"
+                                            title="GitHub Pages">Site</a>,
+                                        <a href="https://github.com/michaelg29/travailEte/" target="_blank"
+                                            title="GitHub">Source Code</a>
+                                    </p>
+                                    <p>
+                                        This website was created for French class as a journal for the tasks we were given
+                                        to complete over the summer. There is a lot of media involved with this site, so I
+                                        was able to learn the best manners in which I could display the audio and video
+                                        clips. This site was built completely in HTML and CSS, without any JavaScript.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <label class="flex-tile" id="french-summer" for="french-summer-toggle">
-                    <p class="hover-desc">French Summer Work Website</p>
-                </label>
-
-                <div class="flex-item">
-                    <input type="checkbox" id="themes-toggle" class="checked-toggle">
-                    <div class="checked-wrapper">
-                        <div class="checked-content">
-                            <label for="themes-toggle" class="checked-content-toggle">
-                                <span></span>
-                                <span></span>
-                            </label>
-                            <p class="checked-content-title">
-                                Portfolio de Thèmes Website
-                            </p>
-                            <div class="checked-content-desc">
-                                <p>Implementation: HTML, CSS, Hosted on GitHub Pages</p>
-                                <p>
-                                    Links:
-                                    <a href="https://michaelg29.github.io/portfolioDeThemes/" target="_blank"
-                                        title="GitHub Pages">Site</a>,
-                                    <a href="https://github.com/michaelg29/portfolioDeThemes/" target="_blank"
-                                        title="GitHub">Source Code</a>
+                    <label class="flex-tile" id="french-summer" for="french-summer-toggle">
+                        <p class="hover-desc">French Summer Work Website</p>
+                    </label>
+    
+                    <div class="flex-item">
+                        <input type="checkbox" id="themes-toggle" class="checked-toggle">
+                        <div class="checked-wrapper">
+                            <div class="checked-content">
+                                <label for="themes-toggle" class="checked-content-toggle">
+                                    <span></span>
+                                    <span></span>
+                                </label>
+                                <p class="checked-content-title">
+                                    Portfolio de Thèmes Website
                                 </p>
-                                <p>
-                                    I built this website as a portfolio to keep track of my work in French class. Each
-                                    page is dedicated to one of the different themes in the class. Once again, I was
-                                    able to experiment with different ways to display media and other content.
-                                    Additionally, I used this as an opportunity to test a new navigation style.
-                                </p>
+                                <div class="checked-content-desc">
+                                    <p>Implementation: HTML, CSS, Hosted on GitHub Pages</p>
+                                    <p>
+                                        Links:
+                                        <a href="https://michaelg29.github.io/portfolioDeThemes/" target="_blank"
+                                            title="GitHub Pages">Site</a>,
+                                        <a href="https://github.com/michaelg29/portfolioDeThemes/" target="_blank"
+                                            title="GitHub">Source Code</a>
+                                    </p>
+                                    <p>
+                                        I built this website as a portfolio to keep track of my work in French class. Each
+                                        page is dedicated to one of the different themes in the class. Once again, I was
+                                        able to experiment with different ways to display media and other content.
+                                        Additionally, I used this as an opportunity to test a new navigation style.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <label class="flex-tile" id="themes" for="themes-toggle">
-                    <p class="hover-desc">Portfolio de Thèmes Website</p>
-                </label>
-
-                <div class="flex-item">
-                    <input type="checkbox" id="spacex-toggle" class="checked-toggle">
-                    <div class="checked-wrapper">
-                        <div class="checked-content">
-                            <label for="spacex-toggle" class="checked-content-toggle">
-                                <span></span>
-                                <span></span>
-                            </label>
-                            <p class="checked-content-title">
-                                SpaceX Launches Mobile App
-                            </p>
-                            <div class="checked-content-desc">
-                                <p>Implementation: JavaScript (React Native)</p>
-                                <p>
-                                    Links:
-                                    <a href="https://github.com/michaelg29/spacexlaunches/" target="_blank"
-                                        title="GitHub">Source Code</a>,
-                                    <a href="https://youtu.be/H-yz3745bw8" target="_blank" title="YouTube">Creation
-                                        Tutorial</a>
+                    <label class="flex-tile" id="themes" for="themes-toggle">
+                        <p class="hover-desc">Portfolio de Thèmes Website</p>
+                    </label>
+    
+                    <div class="flex-item">
+                        <input type="checkbox" id="spacex-toggle" class="checked-toggle">
+                        <div class="checked-wrapper">
+                            <div class="checked-content">
+                                <label for="spacex-toggle" class="checked-content-toggle">
+                                    <span></span>
+                                    <span></span>
+                                </label>
+                                <p class="checked-content-title">
+                                    SpaceX Launches Mobile App
                                 </p>
-                                <p>
-                                    This React Native mobile app is very simple: it takes data about SpaceX launches
-                                    from the SpaceX API and displays them. It displays images from the links along with
-                                    information about the launches, which all come from the API data. This project
-                                    allowed me to experiment with the structure of a React Native app, including how to
-                                    integrate packages like React Navigation.
-                                </p>
+                                <div class="checked-content-desc">
+                                    <p>Implementation: JavaScript (React Native)</p>
+                                    <p>
+                                        Links:
+                                        <a href="https://github.com/michaelg29/spacexlaunches/" target="_blank"
+                                            title="GitHub">Source Code</a>,
+                                        <a href="https://youtu.be/H-yz3745bw8" target="_blank" title="YouTube">Creation
+                                            Tutorial</a>
+                                    </p>
+                                    <p>
+                                        This React Native mobile app is very simple: it takes data about SpaceX launches
+                                        from the SpaceX API and displays them. It displays images from the links along with
+                                        information about the launches, which all come from the API data. This project
+                                        allowed me to experiment with the structure of a React Native app, including how to
+                                        integrate packages like React Navigation.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <label class="flex-tile" id="spacex" for="spacex-toggle">
+                        <p class="hover-desc">SpaceX Launches Mobile App</p>
+                    </label>
                 </div>
-                <label class="flex-tile" id="spacex" for="spacex-toggle">
-                    <p class="hover-desc">SpaceX Launches Mobile App</p>
-                </label>
-            </div>
+            </section>
         </div>
     </main>
 
