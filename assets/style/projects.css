@@ -61,3 +61,11 @@ section.project-section {
 #dv {
     background-image: url("/assets/cgi-bin/dv.png");
 }
+
+#glpong {
+    background-image: url("/assets/cgi-bin/glpong.jpg");
+}
+
+#glconway {
+    background-image: url("/assets/cgi-bin/glconway.png");
+}
