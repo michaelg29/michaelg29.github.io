@@ -33,6 +33,10 @@ section.project-section {
     }
 }
 
+.checked-content-desc a:hover {
+    text-decoration: underline;
+}
+
 #glengine {
     background-image: url("/assets/cgi-bin/glengine.png");
 }
