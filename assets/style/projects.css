@@ -92,3 +92,7 @@ section.project-section {
 #glmath {
     background-image: url("/assets/cgi-bin/glmath.png");
 }
+
+#httpserver {
+    background-image: url("/assets/cgi-bin/http-server.jpg");
+}

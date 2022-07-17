@@ -119,6 +119,44 @@
                     </label>
 
                     <div class="flex-item">
+                        <input type="checkbox" id="httpserver-toggle" class="checked-toggle">
+                        <div class="checked-wrapper">
+                            <div class="checked-content">
+                                <label for="httpserver-toggle" class="checked-content-toggle">
+                                    <span></span>
+                                    <span></span>
+                                </label>
+                                <p class="checked-content-title">
+                                    HttpServer
+                                </p>
+                                <div class="checked-content-desc">
+                                    <p>Implementation: C#</p>
+                                    <p>
+                                        Links:
+                                        <a href="https://github.com/michaelg29/http-server" target="_blank"
+                                            title="GitHub">Source Code</a>
+                                    </p>
+                                    <p>
+                                        The http-server project is in some sense my attempt at replicating the .NET Core web application library. It consists of a web server interface, a static file server that can be hosted from any directory, and a framework that can be used to host a dynamic web server or API. This project helped me learn and experiment with numerous C# features, such as asynchronous functions, interfaces and other OOP concepts, and generics, along with a deep dive into the Type class and all its capabilities. The current capabilities of the library are as follows:
+                                    </p>
+                                    <ul>
+                                        <li>HTTP server interface that accepts and responds to requests; can be customized</li>
+                                        <li>Static file server that allows users to browse their local file system</li>
+                                        <li>Dynamic web server library that allows users to program an API or host other content; involves route trees and customized endpoint responses</li>
+                                    </ul>
+                                    <p>
+                                        See the <a href="https://github.com/michaelg29/http-server/blob/main/README.md" target="_blank"
+                                            title="GitHub">README.md</a> file for more details
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <label class="flex-tile" id="httpserver" for="httpserver-toggle">
+                        <p class="hover-desc">HttpServer</p>
+                    </label>
+
+                    <div class="flex-item">
                         <input type="checkbox" id="dv-toggle" class="checked-toggle">
                         <div class="checked-wrapper">
                             <div class="checked-content">
