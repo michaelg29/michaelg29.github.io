@@ -53,10 +53,6 @@
                     <a href="https://www.github.com/michaelg29" target="_blank" class="button button-i" title="GitHub">
                         <i class="fa fa-github"></i>
                     </a>
-                    <a href="https://twitter.com/MichaelGrieco10" target="_blank" class="button button-i"
-                        title="Twitter">
-                        <i class="fa fa-twitter"></i>
-                    </a>
                 </li>
                 <li class="nav-item">
                     The IBM family of fonts from <a href="https://fonts.google.com/">Google Fonts</a>.
@@ -84,6 +80,68 @@
         </div>
 
         <div class="content-padding" id="top-content">
+            <section class="project-section">
+                <h1 class="section-title">Digital and Embedded Applications</h1>
+                <div class="center-flex">
+                    <div class="flex-item">
+                        <input type="checkbox" id="stm32-galaga-toggle" class="checked-toggle">
+                        <div class="checked-wrapper">
+                            <div class="checked-content">
+                                <label for="stm32-galaga-toggle" class="checked-content-toggle">
+                                    <span></span>
+                                    <span></span>
+                                </label>
+                                <p class="checked-content-title">
+                                    Galaga-like game on an STM32
+                                </p>
+                                <div class="checked-content-desc">
+                                    <p>Implementation: C</p>
+                                    <p>
+                                        Links:
+                                        <a href="https://github.com/jimcv/ECSE444-F2022-Team-1" target="_blank"
+                                            title="GitHub">Source Code</a>
+                                    </p>
+                                    <p>
+                                        As part of a team in a microprocessors course for university, I developed a Galaga-like videogame. It used the physical sensors and peripherals on the STM board to use the board as a video game controller. Since the board does not have a VGA output, we developed a renderer to output over the serial UART interface to a console using UTF-8 text. The program runs on FreeRTOS, and implements several different threads with shared resources that are synchronized and managed with semaphores.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <label class="flex-tile" id="stm32-galaga" for="stm32-galaga-toggle">
+                        <p class="hover-desc">STM32 Galaga</p>
+                    </label>
+
+                    <div class="flex-item">
+                        <input type="checkbox" id="mat-conv-fpga-toggle" class="checked-toggle">
+                        <div class="checked-wrapper">
+                            <div class="checked-content">
+                                <label for="mat-conv-fpga-toggle" class="checked-content-toggle">
+                                    <span></span>
+                                    <span></span>
+                                </label>
+                                <p class="checked-content-title">
+                                    Matrix Convolution FPGA Accelerator Module
+                                </p>
+                                <div class="checked-content-desc">
+                                    <p>Implementation: RTL design in VHDL; Verification in SystemVerilog; Modeling in SystemC; Board support package in C</p>
+                                    <p>
+                                        Links:
+                                        <a href="https://github.com/michaelg29/mat-conv-fpga" target="_blank"
+                                            title="GitHub">Source Code (not yet public)</a>
+                                    </p>
+                                    <p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <label class="flex-tile" id="mat-conv-fpga" for="mat-conv-fpga-toggle">
+                        <p class="hover-desc">Matrix Convolution FPGA Accelerator</p>
+                    </label>
+                </div>
+            </section>
+
             <section class="project-section">
                 <h1 class="section-title">Data Applications</h1>
                 <div class="center-flex">
@@ -258,7 +316,7 @@
                                             title="GitHub">GitHub Repository</a>.
                                     </p>
                                     <p>
-                                        This is a lightweight json reader, editor, and writer in a single hpp file. In this
+                                        This is a lightweight json reader, editor, and writer in a single .hpp file. In this
                                         project, I was able to enhance my skills with C++, including how to use references
                                         along with how to integrate more powerful string parsing into a program. The goal of
                                         this library is to provide a small but important tool that can be used to write and
@@ -434,10 +492,7 @@
                                         <a href="https://35679225.nhd.weebly.com/" target="_blank" title="Weebly">Site</a>
                                     </p>
                                     <p>
-                                        This site was created for a history project and displays information about the
-                                        English Civil War. It uses a chronological organization, with each page dedicated to
-                                        one of the three time periods of the war. This site was created with Weebly as the
-                                        competition rules dictated.
+                                        This site was created for a history project and displays information about the English Civil War. It uses a chronological organization, with each page dedicated to one of the three time periods of the war. This site was created with Weebly as the competition rules dictated.
                                     </p>
                                 </div>
                             </div>
@@ -446,7 +501,7 @@
                     <label class="flex-tile" id="english-cw" for="english-cw-toggle">
                         <p class="hover-desc">English Civil War Website</p>
                     </label>
-    
+
                     <div class="flex-item">
                         <input type="checkbox" id="metabolic-toggle" class="checked-toggle">
                         <div class="checked-wrapper">
@@ -468,10 +523,7 @@
                                             title="GitHub">Source Code</a>
                                     </p>
                                     <p>
-                                        This site was created to display a biological process. I was able to first try out
-                                        hosting a site with GitHub pages with this project and experimented with different
-                                        ways to present the information. I ended up with a JavaScript click-through
-                                        slideshow to show the different steps in the process.
+                                        This site was created to display a biological process. I was able to first try out hosting a site with GitHub pages with this project and experimented with different ways to present the information. I ended up with a JavaScript click-through slideshow to show the different steps in the process.
                                     </p>
                                 </div>
                             </div>
@@ -480,7 +532,7 @@
                     <label class="flex-tile" id="metabolic" for="metabolic-toggle">
                         <p class="hover-desc">Metabolic Pathway Website</p>
                     </label>
-    
+
                     <div class="flex-item">
                         <input type="checkbox" id="quebec-toggle" class="checked-toggle">
                         <div class="checked-wrapper">
@@ -502,11 +554,7 @@
                                             title="GitHub">Source Code</a>
                                     </p>
                                     <p>
-                                        I created this site in French class to present research I did on architecture in
-                                        Quebec City. I opted to host with GitHub pages once again because of the ease in the
-                                        process. This was the first time I experimented with Bootstrap, a CSS framework.
-                                        Additionally, I incorporated many functions in CSS, such as a timeline, along with
-                                        creating my own HTML element in JavaScript.
+                                        I created this site in French class to present research I did on architecture in Quebec City. I opted to host with GitHub pages once again because of the ease in the process. This was the first time I experimented with Bootstrap, a CSS framework. Additionally, I incorporated many functions in CSS, such as a timeline, along with creating my own HTML element in JavaScript.
                                     </p>
                                 </div>
                             </div>
@@ -515,7 +563,7 @@
                     <label class="flex-tile" id="quebec" for="quebec-toggle">
                         <p class="hover-desc">Quebec Architecture Website</p>
                     </label>
-    
+
                     <div class="flex-item">
                         <input type="checkbox" id="french-summer-toggle" class="checked-toggle">
                         <div class="checked-wrapper">
@@ -537,10 +585,7 @@
                                             title="GitHub">Source Code</a>
                                     </p>
                                     <p>
-                                        This website was created for French class as a journal for the tasks we were given
-                                        to complete over the summer. There is a lot of media involved with this site, so I
-                                        was able to learn the best manners in which I could display the audio and video
-                                        clips. This site was built completely in HTML and CSS, without any JavaScript.
+                                        This website was created for French class as a journal for the tasks we were given to complete over the summer. There is a lot of media involved with this site, so I was able to learn the best manners in which I could display the audio and video clips. This site was built completely in HTML and CSS, without any JavaScript.
                                     </p>
                                 </div>
                             </div>
@@ -549,7 +594,7 @@
                     <label class="flex-tile" id="french-summer" for="french-summer-toggle">
                         <p class="hover-desc">French Summer Work Website</p>
                     </label>
-    
+
                     <div class="flex-item">
                         <input type="checkbox" id="themes-toggle" class="checked-toggle">
                         <div class="checked-wrapper">
@@ -571,10 +616,7 @@
                                             title="GitHub">Source Code</a>
                                     </p>
                                     <p>
-                                        I built this website as a portfolio to keep track of my work in French class. Each
-                                        page is dedicated to one of the different themes in the class. Once again, I was
-                                        able to experiment with different ways to display media and other content.
-                                        Additionally, I used this as an opportunity to test a new navigation style.
+                                        I built this website as a portfolio to keep track of my work in French class. Each page is dedicated to one of the different themes in the class. Once again, I was able to experiment with different ways to display media and other content. Additionally, I used this as an opportunity to test a new navigation style.
                                     </p>
                                 </div>
                             </div>
@@ -583,7 +625,7 @@
                     <label class="flex-tile" id="themes" for="themes-toggle">
                         <p class="hover-desc">Portfolio de Thèmes Website</p>
                     </label>
-    
+
                     <div class="flex-item">
                         <input type="checkbox" id="spacex-toggle" class="checked-toggle">
                         <div class="checked-wrapper">
@@ -605,11 +647,7 @@
                                             Tutorial</a>
                                     </p>
                                     <p>
-                                        This React Native mobile app is very simple: it takes data about SpaceX launches
-                                        from the SpaceX API and displays them. It displays images from the links along with
-                                        information about the launches, which all come from the API data. This project
-                                        allowed me to experiment with the structure of a React Native app, including how to
-                                        integrate packages like React Navigation.
+                                        This React Native mobile app is very simple: it takes data about SpaceX launches from the SpaceX API and displays them. It displays images from the links along with information about the launches, which all come from the API data. This project allowed me to experiment with the structure of a React Native app, including how to integrate packages like React Navigation.
                                     </p>
                                 </div>
                             </div>
@@ -625,7 +663,7 @@
 
     <footer>
         <p>
-            &copy; Michael Grieco, 2019-2022.
+            &copy; Michael Grieco, 2019-2023.
         </p>
     </footer>
 </body>

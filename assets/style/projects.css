@@ -37,6 +37,14 @@ section.project-section {
     text-decoration: underline;
 }
 
+#stm32-galaga {
+    background-image: url("/assets/cgi-bin/stm32-galaga.jpg");
+}
+
+#mat-conv-fpga {
+    background-image: url("/assets/cgi-bin/mat-conv-fpga.jpg");
+}
+
 #glengine {
     background-image: url("/assets/cgi-bin/glengine.png");
 }
