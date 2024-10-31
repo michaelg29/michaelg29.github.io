@@ -56,8 +56,13 @@ a.button-i i {
     padding: 30px 60px;   
 }
 
-.title span {
+.title h1 {
+    font-size: 42px;
     padding-bottom: 30px;
+}
+
+.title p {
+    font-size: 21px;
 }
 
 /* ======================================== CARD =====================================*/
