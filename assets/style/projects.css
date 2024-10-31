@@ -37,6 +37,14 @@ section.project-section {
     text-decoration: underline;
 }
 
+#riscv-pmu {
+    background-color: #E2BFD9;
+}
+
+#vlsi-power-gating {
+    background-color: #C8A1E0;
+}
+
 #stm32-galaga {
     background-image: url("/assets/cgi-bin/stm32-galaga.jpg");
 }
