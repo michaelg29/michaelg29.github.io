@@ -25,7 +25,7 @@ section.project-section {
     .project-section .center-flex {
         padding: 30px;
     }
-    
+
     .project-section .section-title {
         font-size: 48px;
         font-weight: bold;
@@ -37,7 +37,11 @@ section.project-section {
     text-decoration: underline;
 }
 
-#riscv-pmu {
+#windfoil {
+    background-image: url("/assets/cgi-bin/windfoil.png");
+}
+
+#icicle {
     background-color: #E2BFD9;
 }
 

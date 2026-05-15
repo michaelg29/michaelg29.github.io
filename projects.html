@@ -83,34 +83,61 @@
             <section class="project-section">
                 <h1 class="section-title">Digital and Embedded Applications</h1>
                 <div class="center-flex">
+
                     <div class="flex-item">
-                        <input type="checkbox" id="riscv-pmu-toggle" class="checked-toggle">
+                        <input type="checkbox" id="windfoil-toggle" class="checked-toggle">
                         <div class="checked-wrapper">
                             <div class="checked-content">
-                                <label for="riscv-pmu-toggle" class="checked-content-toggle">
+                                <label for="windfoil-toggle" class="checked-content-toggle">
                                     <span></span>
                                     <span></span>
                                 </label>
                                 <p class="checked-content-title">
-                                    RISC-V Microarchitectural Performance Characterization
+                                    Windfoil: Workload-Independent Formation of Power and Thermal Islands for SoC Characterization
                                 </p>
                                 <div class="checked-content-desc">
-                                    <p>Implementation: TCL, Verilog, Chisel</p>
+                                    <p>Implementation: TCL, Verilog</p>
                                     <p>
                                         Links:
-                                        <a href="https://github.com/mattweingarten/riscv-pmu-core/blob/main/doc/RISC_V_Infrastructure_on_an_FPGA___Midterm_Report.pdf" target="_blank" title="GitHub">Midterm report</a>
+                                        <a href="/assets/doc/grieco-nyccad-2026_slides.pdf" target="_blank"
+                                            title="GitHub">Slides</a>
                                     </p>
-                                        <p>This project is still in progress. Some of this description is already completed, other parts represent our final goals.</p>
-                                        <p>The project set out with a goal to design some enhancement to a RISC-V design using an FPGA for physical prototyping and verification. We started by analyzing a few different core designs (<a href="https://github.com/lowRISC/ibex" target="_blank">Ibex</a>, <a href="http://www2.eecs.berkeley.edu/Pubs/TechRpts/2016/EECS-2016-17.html" target="_blank">RocketChip</a>, and <a href="https://people.eecs.berkeley.edu/~krste/papers/SonicBOOM-CARRV2020.pdf" target="_blank">BOOM</a>). A long term idea we devised was to add reconfiguring abilities to a core to facilitate autonomous reconfiguration. The first step in this, which is feasible for a semester project, is designing a performance monitor. Eventually, a reconfiguring controller can use the monitor to listen for events and reconfigure the core to improve performance and power consumption.</p>
-                                        <p>We mapped the top-down characterization approach (<a href="https://doi.org/10.1109/ISPASS.2014.6844459" target="_blank">Yasin, 2014</a>), which Intel uses for their out-of-order cores, to our selected RISC-V cores. Some of the basic RISC-V performance counters already facilitate the decisions that must be made in the approach. However, the cores needed extra counters for complete characterization. We implemented these additional counters along with the RTL module for making those decisions.</p>
-                                        <p>To evaluate and verify our design, we will implement a golden model in the transformed simulation model output by Verilator. We inject event monitors to check when certain events in the core happen during simulation, and used it to increment a counter in the testbench. Then, this count provides a reference to check the accuracy of our implementation. Once the simulation is functional, we can then inject benchmark programs to test the implementation. Modifying the internal core architecture should yield performance changes, which we hope to see reflected in the counters.</p>
-                                        <p>Apart from the simulation, we used an FPGA and an ASIC synthesis and place&route flow. The FPGA flow allows for hardware-based benchmarking of software programs that is orders of magnitude faster than software-based simulation. We are in the process of synthesizing the designs to a Zedboard FPGA. The Cadence ASIC flow, based on the ASAP7 physical design kit (<a href="https://doi.org/10.1016/j.mejo.2016.04.006" target="_blank">Clark et al., 2016</a>) verifies that our implementation does not compromise the processor's physical functionality if it were to be synthesized.</p>
+                                    <p>
+                                        Power and thermal management are necessary for stretching the performance of modern, heterogeneous systems-on-chip while guarding the integrity of the underlying silicon. Management schemes require accurate models with enough visibility of hardware while abstracting away physical information for architects. Previous design-time models derive models by associating weights to performance events based on measured power during representative workloads. Such models fail to capture the physical relationships in their abstractions and rely solely on non-exhaustive workloads, thus introducing error when extrapolating. We propose an automated RTL-to-model flow to cluster fine-grained circuit blocks based on their physical relationships. These clusters have determinant and workload-independent effects on the power consumption and temperature changes. We train our model inside a static analysis pass of the circuit, using characterization obtained solely from the physical design flow. With heterogeneous systems consisting of a Rocket core with accelerators, we achieve xxx MAPE. This error improves upon the extrapolation of the state-of-the-art methodologies which train models using simulation traces from specific workloads. Thus, we enable designers to derive accurate models for the interdependence of power and temperature for more complex, heterogeneous hardware, independent of costly and misleading system-level simulations.
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <label class="flex-tile" id="riscv-pmu" for="riscv-pmu-toggle">
+                    <label class="flex-tile" id="windfoil" for="windfoil-toggle">
+                        <p class="hover-desc">Heterogeneous power characterization</p>
+                    </label>
+
+                    <div class="flex-item">
+                        <input type="checkbox" id="icicle-toggle" class="checked-toggle">
+                        <div class="checked-wrapper">
+                            <div class="checked-content">
+                                <label for="icicle-toggle" class="checked-content-toggle">
+                                    <span></span>
+                                    <span></span>
+                                </label>
+                                <p class="checked-content-title">
+                                    Icicle: Open-Source Hardware Support for Top-Down Microarchitectural Analysis on RISC-V
+                                </p>
+                                <div class="checked-content-desc">
+                                    <p>Implementation: TCL, Verilog, Chisel</p>
+                                    <p>
+                                        Links:
+                                        <a href="https://doi.org/10.1109/IISWC66894.2025.00045" target="_blank" title="GitHub">Midterm report</a>
+                                    </p>
+                                        <p>Performance characterization enables software to efficiently utilize the underlying hardware by pinpointing key performance bottlenecks. The need for specialization and hardware/software co-design continues to drive up the pace of hardware development, especially noticeable in open-source platforms. Unfortunately, performance characterization on these platforms remains challenging, as RISC-V processors do not support the industry standard characterization methodology, Top-Down Microarchitectural Analysis (TMA). This lack of support inhibits practitioners who rely on open-source tooling to understand workload bottlenecks and researchers proposing novel characterization methods.In this paper, we introduce Icicle,1 the first full system-stack TMA implementation on widely-used open-source processors, Rocket and BOOM. Icicle enables TMA by adding three and seven new performance events to Rocket and BOOM respectively, while also revising the physical implementation of performance counters to support monitoring concurrent events. Icicle also includes a perf-like software tool and a trace-based validation infrastructure. We evaluate Icicle’s efficacy with three case studies, accuracy against trace-based ground truth, and overhead of adding new events and counter architecture, measured in terms of post-synthesis power and timing analysis.</p>
+                                        <p>My specific role in this project was centered around the physical design evaluation. The FPGA flow allows for hardware-based benchmarking of software programs that is orders of magnitude faster than software-based simulation. We are in the process of synthesizing the designs to a Zedboard FPGA. The Cadence ASIC flow, based on the ASAP7 physical design kit (<a href="https://doi.org/10.1016/j.mejo.2016.04.006" target="_blank">Clark et al., 2016</a>) verifies that our implementation does not compromise the processor's physical functionality if it were to be synthesized.</p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <label class="flex-tile" id="icicle" for="icicle-toggle">
                         <p class="hover-desc">RISC-V Performance Monitoring Unit</p>
                     </label>
 
@@ -723,7 +750,7 @@
 
     <footer>
         <p>
-            &copy; Michael Grieco, 2019-2025.
+            &copy; Michael Grieco, 2019-2026.
         </p>
     </footer>
 </body>
