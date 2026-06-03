@@ -1,4 +1,4 @@
-# michaelg29.github.io
+# michaelgrieco.github.io
 
 ## Description:
 Portfolio website to display projects/work.
